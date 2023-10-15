@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("source-sans-pro.regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: rgba(26, 26, 26, 0.9);
+  backdrop-filter: blur(125px);
+  height: 100vh;
+  color: #FFF;
+}
+
+.content {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.content .eclipse-background {
+  position: absolute;
+  bottom: -68px;
+  right: -240px;
+  width: 660px;
+  height: 660px;
+  border-radius: 660px;
+  background: conic-gradient(from 91deg at 54.9% 60.95%, #582FFB 0deg, #FF4DCD 187.4999928474deg, #FC974E 360deg), #D9D9D9;
+  opacity: 0.2;
+  filter: blur(50px);
+}
+.content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 92px 150px 62px 142px;
+  box-sizing: border-box;
+}
+.content .header .title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.content .header .title h3 {
+  background: linear-gradient(90deg, #582FFB 3.3%, #FF4DCD 57.06%, #FC974E 106.51%);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content .header .title p {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+.content .header .links {
+  display: flex;
+  gap: 12px;
+}
+.content .header .links button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  width: 42px;
+  height: 42px;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.content .cards {
+  display: inline-flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-left: 48px;
+}
+.content .cards .card {
+  width: 224px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+.content .cards .card .card-body p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.content .cards .card .card-person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.content .cards .card .card-person .ratings {
+  color: #FFB800;
+}
+.content .cards .card .card-person .ratings ion-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+.content .cards .card .card-person .details img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.content .cards .card .card-person .details p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.content .cards .card .card-person .details span {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/*# sourceMappingURL=output.css.map */
