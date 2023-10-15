@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("source-sans-pro.regular.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro";
+}
+
+body {
+  background-color: #ECF8FF;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.content .box-embed {
+  width: 601px;
+  background-color: #FFF;
+  padding: 35px 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid rgba(29, 161, 242, 0.2);
+  box-shadow: 0px 15px 60px 0px rgba(29, 161, 242, 0.15);
+}
+.content .box-embed .box-profile {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.content .box-embed .box-profile .box-profile-content {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.content .box-embed .box-profile .box-profile-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.content .box-embed .box-profile .box-profile-content .box-profile-content-paragraph p {
+  font-size: 18px;
+  line-height: normal;
+  font-style: normal;
+  color: #000;
+  font-weight: 700;
+}
+.content .box-embed .box-profile .box-profile-content .box-profile-content-paragraph span {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+}
+.content .box-embed .box-profile .icons {
+  width: 30px;
+  height: 30px;
+  color: #1DA1F2;
+}
+.content .box-embed .box-content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.content .box-embed .box-content p span {
+  color: #1DA1F2;
+}
+.content .box-embed .box-complement {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+.content .box-embed .box-complement p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content .box-embed .box-complement p ion-icon {
+  width: 24px;
+  height: 24px;
+}
+.content .icons-mode {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 25px;
+  width: 24px;
+  height: 24px;
+  color: #000;
+}
+
+/*# sourceMappingURL=output.css.map */
