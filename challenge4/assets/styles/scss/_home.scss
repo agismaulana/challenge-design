@@ -1,6 +1,7 @@
 .home-content {
     height: 100%;
     position: relative;
+    overflow-x:hidden;
 
     .hero {
         background: linear-gradient(167deg, $main-color-2 11.01%, $main-color 105.86%);

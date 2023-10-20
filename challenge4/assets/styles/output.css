@@ -39,6 +39,7 @@ body {
   color: #FFF;
   line-height: 30px;
   position: relative;
+  overflow-x: hidden;
 }
 .load-content .leaves {
   position: absolute;
@@ -102,6 +103,7 @@ body {
 .home-content {
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 .home-content .hero {
   background: linear-gradient(167deg, #FDC830 11.01%, #F37335 105.86%);
