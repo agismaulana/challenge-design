@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Kreon";
+  src: url("../fonts/static/Kreon-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kreon";
+}
+
+html, body {
+  height: 100%;
+  background: #d9d9d9;
+}
+
+body {
+  width: 100%;
+  background: #FFF;
+  overflow-x: hidden;
+  position: relative;
+}
+@media screen and (min-width: 498px) {
+  body {
+    width: 393px;
+    margin: auto;
+    background: #FFF;
+  }
+}
+
+.splash-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  align-items: center;
+  gap: 12px;
+  background: #FFF;
+}
+.splash-content img {
+  width: 100%;
+  margin-top: 38px;
+  margin-bottom: 25px;
+}
+.splash-content h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.splash-content p {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
+}
+.splash-content .slide-temp {
+  margin-top: 28px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.splash-content .slide-temp span {
+  box-sizing: border-box;
+  width: 38px;
+  height: 8px;
+  border-radius: 15px;
+  background: #D9D9D9;
+}
+.splash-content .slide-temp span:nth-child(2) {
+  background: #024220;
+}
+.splash-content button {
+  width: 80%;
+  padding: 12px 10px;
+  border-radius: 30px;
+  background: #024220;
+  font-size: 30px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  color: #FFF;
+}
+.splash-content button:hover {
+  cursor: pointer;
+}
+
+.started-content {
+  height: 100%;
+  position: relative;
+  background: #FFF;
+}
+.started-content .header {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 38px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+.started-content .header img {
+  width: 28%;
+}
+.started-content .header h3 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.started-content .body {
+  padding: 0 20px;
+}
+.started-content .body p {
+  padding: 48px 12px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.started-content .body .input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 8px;
+  margin: 12px 0px;
+  background: #D6FFD9;
+  border-radius: 8px;
+}
+.started-content .body .input label svg {
+  width: 24px;
+  height: 24px;
+}
+.started-content .body .input input[type=text] {
+  width: 100%;
+  padding: 12px 0px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.started-content .footer {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 38px;
+}
+.started-content .footer .slide-temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.started-content .footer .slide-temp span {
+  box-sizing: border-box;
+  width: 38px;
+  height: 8px;
+  border-radius: 15px;
+  background: #D9D9D9;
+}
+.started-content .footer .slide-temp span:nth-child(2) {
+  background: #024220;
+}
+.started-content .footer .auth-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.started-content .footer .auth-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 40px;
+  padding: 8px 20px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.started-content .footer .auth-button button svg {
+  width: 18px;
+  height: 18px;
+}
+.started-content .footer .auth-button button:nth-child(1) {
+  background: #D6FFD9;
+}
+.started-content .footer .auth-button button:nth-child(2) {
+  background: #024220;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=output.css.map */

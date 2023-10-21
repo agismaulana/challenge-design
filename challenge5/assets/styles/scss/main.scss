@@ -1,0 +1,85 @@
+$main-color: #024220;
+$basic-color: #D6FFD9;
+
+@font-face {
+    font-family: 'Kreon';
+    src: url('../fonts/static/Kreon-Regular.ttf');
+}
+
+@mixin slide-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    span {
+        box-sizing: border-box;
+        width: 38px;
+        height: 8px;
+        border-radius: 15px;
+        background: #D9D9D9;
+
+        &:nth-child(2) {
+            background: $main-color;
+        }
+    }
+}
+
+@mixin input {
+    .input {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        padding: 0px 8px;
+        margin: 12px 0px;
+        background: $basic-color;
+        border-radius: 8px;
+
+        label {
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 0px;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background: transparent;
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kreon';
+}
+
+html, body {
+    height: 100%;
+    background: #d9d9d9;
+}
+
+body {
+    width: 100%;
+    background: #FFF;
+    overflow-x: hidden;
+    position: relative;
+    
+    @media screen and (min-width: 498px) {
+        width: 393px;
+        margin: auto;
+        background: #FFF;
+    }
+}
+
+@import 'splash';
+
+@import 'started';
