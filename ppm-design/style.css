@@ -25,7 +25,7 @@ body {
         position: absolute;
         top: 0;
         right: 2%;
-        width: 52%;
+        width: 48%;
         height: 100%;
         background: #9BEAE0;
         clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
