@@ -315,7 +315,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 10px;
+            gap: 3px;
             text-decoration: none;
 
             &:hover {
@@ -350,14 +350,13 @@
 
                 .circle {
                     position: absolute;
-                    top: -32px;
+                    top: -28px;
                     background: $main-color;
                     width: 52px;
                     height: 52px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    border: 6px solid transparent;
                     border-radius: 50%;
                     
                     svg {

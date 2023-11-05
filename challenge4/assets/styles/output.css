@@ -361,7 +361,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 3px;
   text-decoration: none;
 }
 .home-content .menu-footer a:hover svg {
@@ -388,14 +388,13 @@ body {
 }
 .home-content .menu-footer a:nth-child(1) .circle {
   position: absolute;
-  top: -32px;
+  top: -28px;
   background: #F37335;
   width: 52px;
   height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 6px solid transparent;
   border-radius: 50%;
 }
 .home-content .menu-footer a:nth-child(1) .circle svg {
