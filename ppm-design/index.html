@@ -1,545 +1,136 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nft tailwindcss slicing</title>
-    <link rel="stylesheet" href="./dist/css/output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="px-[2vh] xs:[5vh] lg:px-[10vh] pt-[3.5vh]">
+        <span class="bg-hero hidden lg:flex"></span>
 
-    <!-- Header start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
-      <div class="container">
-        <div class="flex relative items-center justify-between">
-          <div class="px-4">
-            <a href="#home" class="block py-6 font-bold text-blue-500 text-2xl">NFTs</a>
-          </div>
-          <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-            </button>
-            <nav 
-            id="nav-menu" 
-            class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none">
-            <div class="lg:flex lg:items-center">
-              <ul class="block lg:flex">
-                <li class="group">
-                  <a href="#explore" class="mx-8 flex py-2 text-base text-primary group-hover:text-blue-600 font-semibold">Explore</a>
-                </li>
-                <li class="group">
-                  <a href="#how" class="mx-8 flex py-2 text-base text-primary group-hover:text-blue-600 font-semibold">How it work</a>
-                </li>
-                <li class="group">
-                  <a href="#community" class="mx-8 flex py-2 text-base text-primary group-hover:text-blue-600 font-semibold">Community</a>
-                </li>
-              </ul>
-              <div class="py-2 lg:ml-48">
-                <button>
-                  <a href="#" class="block font-semibold text-primary ml-8 mr-4 hover:text-blue-600">Sign in</a>
-                </button>
-                <button>
-                  <a href="#" class="block bg-blue-600 text-white font-semibold px-5 py-2 rounded-md hover:bg-blue-500">Sign up</a>
-                </button>
-              </div>
+        <!-- Section Navbar -->
+        <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-row justify-start items-center w-[55%]">
+                <a href="#" class="flex gap-2 font-bold text-[18px] leading-normal mr-[48px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M4.8 2.79999C4.80356 2.86282 4.8268 2.92295 4.86641 2.97185C4.90603 3.02075 4.96002 3.05595 5.02075 3.07248C5.08148 3.089 5.14586 3.08601 5.2048 3.06392C5.26373 3.04184 5.31422 3.00178 5.34913 2.94941C5.38404 2.89705 5.4016 2.83503 5.39932 2.77213C5.39704 2.70924 5.37504 2.64866 5.33643 2.59896C5.29782 2.54926 5.24456 2.51296 5.18418 2.4952C5.12381 2.47744 5.05937 2.47911 5 2.49999H4C3.46957 2.49999 2.96086 2.7107 2.58579 3.08578C2.21071 3.46085 2 3.96956 2 4.49999V9.49999C2 11.0913 2.63214 12.6174 3.75736 13.7426C4.88258 14.8678 6.4087 15.5 8 15.5C9.5913 15.5 11.1174 14.8678 12.2426 13.7426C13.3679 12.6174 14 11.0913 14 9.49999V4.49999C14 3.96956 13.7893 3.46085 13.4142 3.08578C13.0391 2.7107 12.5304 2.49999 12 2.49999H11C10.9803 2.51969 10.9647 2.54307 10.954 2.56881C10.9434 2.59455 10.9379 2.62213 10.9379 2.64999C10.9379 2.67785 10.9434 2.70543 10.954 2.73117C10.9647 2.75691 10.9803 2.78029 11 2.79999C11.0197 2.81969 11.0431 2.83531 11.0688 2.84597C11.0946 2.85663 11.1221 2.86212 11.15 2.86212C11.1779 2.86212 11.2054 2.85663 11.2312 2.84597C11.2569 2.83531 11.2803 2.81969 11.3 2.79999" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 15.5V16.5C8 18.0913 8.63214 19.6174 9.75736 20.7426C10.8826 21.8679 12.4087 22.5 14 22.5V22.5C15.5913 22.5 17.1174 21.8679 18.2426 20.7426C19.3679 19.6174 20 18.0913 20 16.5V12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 12.5C21.1046 12.5 22 11.6046 22 10.5C22 9.39543 21.1046 8.5 20 8.5C18.8954 8.5 18 9.39543 18 10.5C18 11.6046 18.8954 12.5 20 12.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    Holadok
+                </a>
+
+                <ul class="flex flex-row justify-between items-center gap-8 text-[16px] leading-normal">
+                    <li>
+                        <a href="#" class="font-semibold">Home</a>   
+                    </li>
+                    <li>
+                        <a href="#">Features</a>   
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>   
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>   
+                    </li>
+                </ul>
             </div>
-            </nav>
-          </div>
+
+            
+
+            <div class="flex flex-row items-center gap-8">
+                <a href="#" class="font-bold">Login</a>
+                <button class="px-[2.8vh] py-[0.6vh] border border-[#101C45]">Book Now</button>
+            </div>
         </div>
-      </div>
-    </header>
-    <!-- Header end -->
 
-    <!-- Hero Start -->
-    <section id="home" class="pt-32">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="mb-6 text-3xl font-bold leading-tight tracking-wide text-primary lg:max-w-xl lg:text-5xl lg:leading-tight">Discover the world's most innovative <span class="text-blue-700">digital art.</span></h1>
-            <p class="lg:text-md mb-8 text-base text-secondary lg:max-w-md">For innovative artists, musicians, and brands. Async is the best creator to tell powerfull stories, collaborate, and plug into the wider ecosystem</p>
-            <a href="#" class="rounded-lg bg-blue-600 py-3 px-6 text-sm text-white transition duration-300 ease-in-out hover:bg-blue-500">Try it Now ></a>
-          </div>
+        <!-- Section Hero -->
+        <div class="flex flex-row justify-between">
+            <!-- Section Hero Quotes -->
+            <div class="mt-[5.8rem] mb-[5.8rem] lg:w-[75%] w-[100%]">
+                <h3 class="text-[2.6rem] font-bold">Get the healthcare <br/> you need, when you <br/> need it</h3>
+                <p class="mt-[12px]">Manage all of your healthcare needs in one convenient <br/> place - from booking appoinments to tracking your </p> health history</p>
+            
+                <button class="mt-[32px] py-[15px] px-[35px] bg-[#203271] text-white">Book An Appointment</button>
+            </div>
 
-          <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative">
-              <img src="./src/img/hero.png" alt="hero" class="relative z-10 mx-auto max-w-full transition duration-300 ease-in-out hover:-translate-y-4" />
-              <span class="absolute bottom-0 h-full w-full rounded-full bg-blue-700 opacity-10 blur-lg"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Hero End -->
+                <div class="absolute top-[16%] -left-[40%] bg-white p-[20px] rounded-md w-[20rem] shadow-md invisible xl:visible">
+                    <div class="flex flex-row justify-between align-items">
+                        <span class="flex flex-row items-center gap-4">
+                            <img src="images/comment-image.svg" alt="">
+                            <p class="text-[14px] font-semibold leading-normal text-[#000]">Jane Doe</p>
+                        </span>
 
-    <!-- Page Work start -->
-    <section id="how" class="pt-32 pb-16">
-      <div class="container">
-          <div class="w-full px-4 mx-auto">
-            <h1 class="font-semibold text-primary text-2xl mb-10 lg:text-4xl">How it Work!</h1>
-            <div class="flex flex-wrap">
-                <div class="w-full items-center mb-4 px-4 md:w-1/2 lg:w-1/4 hover:bg-gray-100 transition ease-in-out duration-300 hover:shadow-lg hover:rounded-lg hover:-translate-y-4 py-4">
-                    <div class="flex items-center justify-center my-6">
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 p-8">
-                            <span class=" text-white text-3xl pt-1"><i class='bx bxs-wallet'></i></span>
-                        </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 21C6 21 10 20 10 13V5C10 3.75 9.244 2.983 8 3H4C2.75 3 2 3.75 2 4.972V11C2 12.25 2.75 13 4 13C5 13 5 13 5 14V15C5 16 4 17 3 17C2 17 2 17.008 2 18.031V20C2 21 2 21 3 21Z" fill="black" fill-opacity="0.2"/>
+                            <path d="M15 21C18 21 22 20 22 13V5C22 3.75 21.243 2.983 20 3H16C14.75 3 14 3.75 14 4.972V11C14 12.25 14.75 13 16 13H16.75C16.75 15.25 17 17 14 17V20C14 21 14 21 15 21Z" fill="black" fill-opacity="0.2"/>
+                        </svg>
                     </div>
-                    <div class="text-center px-3">
-                        <h5 class="text-xl font-semibold text-primary">Set up your wallet</h5>
-                        <p class="text-sm text-secondary py-4">The Nft Marketplace is located in the top right corner of Opensea, Once you have set up yout wallet of choice, you can connect it to OpenSea by clicking on it</p>
+                    <div class="text-[12px] mt-[8px]">
+                        <p>“The doctor appointment app has been great for me. Scheduling appointments and getting medication reminders is much easier, and I love the option for virtual consultations. I'd recommend this app to others.”</p>
                     </div>
                 </div>
-                <div class="w-full items-center mb-4 px-4 md:w-1/2 lg:w-1/4 hover:bg-gray-100 transition ease-in-out duration-300 hover:shadow-lg hover:rounded-lg py-4 hover:-translate-y-4">
-                    <div class="flex items-center justify-center my-6">
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 p-8">
-                            <span class=" text-white text-3xl pt-1"><i class='bx bxs-grid-alt'></i></span>
-                        </a>
-                    </div>
-                    <div class="text-center px-3">
-                        <h5 class="text-xl font-semibold text-primary">Create your Collection</h5>
-                        <p class="text-sm text-secondary py-4">Creating a collection is as simple as clicking Create, Seat a secondary sales fee, social links profile & banner images and a description</p>
-                    </div>
-                </div>
-                <div class="w-full items-center mb-4 px-4 md:w-1/2 lg:w-1/4 hover:bg-gray-100 transition ease-in-out duration-300 hover:shadow-lg hover:rounded-lg py-4 hover:-translate-y-4">
-                    <div class="flex items-center justify-center my-6">
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 p-8">
-                            <span class=" text-white text-3xl pt-1"><i class='bx bx-image'></i></span>
-                        </a>
-                    </div>
-                    <div class="text-center px-3">
-                        <h5 class="text-xl font-semibold text-primary">Add your NFTs</h5>
-                        <p class="text-sm text-secondary py-4">Create yout NFTs by uploading your work (image, video, audio, or 3D art). giving it a title and description and customizing properties and statics</p>
-                    </div>
-                </div>
-                <div class="w-full items-center mb-4 px-4 md:w-1/2 lg:w-1/4 hover:bg-gray-100 transition ease-in-out duration-300 hover:shadow-lg hover:rounded-lg py-4 hover:-translate-y-4">
-                    <div class="flex items-center justify-center my-6">
-                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 p-8">
-                            <span class=" text-white text-3xl pt-1"><i class='bx bxs-store'></i></span>
-                        </a>
-                    </div>
-                    <div class="text-center px-3">
-                        <h5 class="text-xl font-semibold text-primary">List them for Sale</h5>
-                        <p class="text-sm text-secondary py-4">A wide range of listing types is avaible to you, such as auctions, fixed-price listings, and declining-price listings. Depending on how you want to sell your NFTs.</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr class="border-t-2 border-gray-300">
-    <!-- <div class="relative">
-      <span class="z-9999 absolute -top-96 -right-96 w-[1000px] h-[1000px] rounded-full bg-blue-700 opacity-10 blur-lg"></span>
-    </div> -->
-    <!-- Page Work end -->
 
-    <!-- Make extraordinary start -->
-    <section class="pt-20 lg:pt-28 pb-20 lg:pb-28">
-      <div class="container">
-        <div class="w-full px-5">
-          <div class="rounded-3xl overflow-hidden h-56 sm:px-16 sm:pt-6 lg:h-96 lg:px-32 lg:pt-24 bg-cover bg-center bg-blend-multiply bg-slate-700 mix-blend-multiply" style="background-image: url('./src/img/extraordinary.jpg');">
-              <h1 class="font-semibold text-2xl text-white px-4 pt-8 lg:text-4xl">Make Extraordinary NFTs and sell them</h1>
-              <p class="text-gray-200 text-sm px-4 py-2 pb-4 md:text-base lg:pb-8">The best digital artwork in the world</p>
-            <div class="flex px-4">
-              <a href="#" class="block text-blue-700 bg-white px-6 py-2 mr-2 rounded-lg hover:bg-gray-200 font-semibold text-sm md:text-base">Explore More</a>
-              <a href="#" class="text-white bg-transparent border border-white rounded-lg px-6 py-2 hover:bg-blue-700 text-sm md:text-base">Sell Artwork</a>
+                <img class="w-[100%] hidden lg:flex" src="images/hero-image.png" alt="">
             </div>
-          </div>
-
-          <!-- Top seller start -->
-          <section class="pt-20 lg:pt-28">
-            <div class="mx-auto">
-              <h1 class="font-semibold text-primary text-2xl mb-10 lg:mb-16 lg:text-4xl text-center">Top Sellers</h1>
-              <div class="flex flex-wrap">
-                  <div class="flex w-1/2 items-center mb-5 px-4 md:w-1/3 lg:w-1/4 hover:bg-gray-100 hover:rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer">
-                      <div class="my-4">
-                          <img src="src/img/avatar/1.svg" alt="avatar" class="h-10 w-10 md:h-14 md:w-14 rounded-full">
-                      </div>
-                      <div class="px-2 md:px-4">
-                          <h5 class="text-xs font-semibold text-primary md:text-base">John Paul</h5>
-                          <p class="text-xs text-secondary md:text-base">ETH 252.68</p>
-                      </div>
-                  </div>
-                  <div class="flex w-1/2 items-center mb-5 px-4 md:w-1/3 lg:w-1/4 hover:bg-gray-100 hover:rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer">
-                      <div class="my-4">
-                          <img src="src/img/avatar/2.svg" alt="avatar" class="h-10 w-10 md:h-14 md:w-14 rounded-full">
-                      </div>
-                      <div class="px-2 md:px-4">
-                          <h5 class="text-xs font-semibold text-primary md:text-base">Robert Lee</h5>
-                          <p class="text-xs text-secondary md:text-base">ETH 262.91</p>
-                      </div>
-                  </div>
-                  <div class="flex w-1/2 items-center mb-5 px-4 md:w-1/3 lg:w-1/4 hover:bg-gray-100 hover:rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer">
-                      <div class="my-4">
-                          <img src="src/img/avatar/5.svg" alt="avatar" class="h-10 w-10 md:h-14 md:w-14 rounded-full">
-                      </div>
-                      <div class="px-2 md:px-4">
-                          <h5 class="text-xs font-semibold text-primary md:text-base">Amelia Rose</h5>
-                          <p class="text-xs text-secondary md:text-base">ETH 252.21</p>
-                      </div>
-                  </div>
-                  <div class="flex w-1/2 items-center mb-5 px-4 md:w-1/3 lg:w-1/4 hover:bg-gray-100 hover:rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer">
-                      <div class="my-4">
-                          <img src="src/img/avatar/6.svg" alt="avatar" class="h-10 w-10 md:h-14 md:w-14 rounded-full">
-                      </div>
-                      <div class="px-2 md:px-4">
-                          <h5 class="text-xs font-semibold text-primary md:text-base">Sarah Jane</h5>
-                          <p class="text-xs text-secondary md:text-base">ETH 262.81</p>
-                      </div>
-                  </div>
-                  <div class="flex w-1/2 items-center mb-5 px-4 md:w-1/3 lg:w-1/4 hover:bg-gray-100 hover:rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer">
-                      <div class="my-4">
-                          <img src="src/img/avatar/7.svg" alt="avatar" class="h-10 w-10 md:h-14 md:w-14 rounded-full">
-                      </div>
-                      <div class="px-2 md:px-4">
-                          <h5 class="text-xs font-semibold text-primary md:text-base">Anna Maria</h5>
-                          <p class="text-xs text-secondary md:text-base">ETH 235.71</p>
-                      </div>
-                  </div>
-                  <div class="flex w-1/2 items-center mb-5 px-4 md:w-1/3 lg:w-1/4 hover:bg-gray-100 hover:rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer">
-                      <div class="my-4">
-                          <img src="src/img/avatar/3.svg" alt="avatar" class="h-10 w-10 md:h-14 md:w-14 rounded-full">
-                      </div>
-                      <div class="px-2 md:px-4">
-                          <h5 class="text-xs font-semibold text-primary md:text-base">Jack Wyatt</h5>
-                          <p class="text-xs text-secondary md:text-base">ETH 242.21</p>
-                      </div>
-                  </div>
-                  <div class="flex w-1/2 items-center mb-5 px-4 md:w-1/3 lg:w-1/4 hover:bg-gray-100 hover:rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer">
-                      <div class="my-4">
-                          <img src="src/img/avatar/4.svg" alt="avatar" class="h-10 w-10 md:h-14 md:w-14 rounded-full">
-                      </div>
-                      <div class="px-2 md:px-4">
-                          <h5 class="text-xs font-semibold text-primary md:text-base">Sawyer Ford</h5>
-                          <p class="text-xs text-secondary md:text-base">ETH 212.24</p>
-                      </div>
-                  </div>
-                  <div class="flex w-1/2 items-center mb-5 px-4 md:w-1/3 lg:w-1/4 hover:bg-gray-100 hover:rounded-xl hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out cursor-pointer">
-                      <div class="my-4">
-                          <img src="src/img/avatar/8.svg" alt="avatar" class="h-10 w-10 md:h-14 md:w-14 rounded-full">
-                      </div>
-                      <div class="px-2 md:px-4">
-                          <h5 class="text-xs font-semibold text-primary md:text-base">Ada Lucy</h5>
-                          <p class="text-xs text-secondary md:text-base">ETH 272.31</p>
-                      </div>
-                  </div>
-              </div>
-            </div>
-          </section>
-          <!-- Top seller end -->
-        </div>
-      </div>
-    </section>
-    <hr class="border-t-2 border-gray-300">
-    <!-- Make extraordinary end -->
-
-    <!-- Trending Auction start -->
-    <section id="explore" class="pt-32 pb-20">
-      <div class="container">
-        <div class="w-full px-4 flex justify-between">
-          <h1 class="font-semibold text-primary text-2xl mb-10 lg:mb-16 lg:text-4xl text-center">Trending Auction</h1>
-          <a href="#" class="block text-blue-600 text-base font-semibold">View All</a>
         </div>
 
-        <div class="flex flex-wrap">
-          <div class="w-full xl:w-1/3 lg:w-1/2 px-4">
-            <div class="mb-8 rounded-2xl border border-gray-200 hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-4">
-              <a href="#">
-                <img src="src/img/trending/1-1.jpg" alt="card-nft" class="w-full py-4 px-4 rounded-3xl overflow-hidden">
-              </a>
-              <div class="pt-4 lg:pt-8 px-8">
-                <h3><a href="#" class="font-bold text-xl lg:text-2xl uppercase text-primary">Generative Identities</a></h3>
-                <h5 class="text-sm lg:text-base text-primary pt-2 font-semibold">By PVContractOwner</h5>
-                <div class="flex justify-between">
-                  <div class="py-6">
-                    <p class="text-sm lg:text-base font-semibold">Current Bid</p>
-                    <p class="font-bold text-lg lg:text-2xl">17.65 ETH</p>
-                  </div>
-                    <button><a href="#" class="font-semibold bg-blue-600 py-2 px-4 text-white rounded-lg text-sm hover:bg-blue-500 lg:text-base">Place a Bid</a></button>                
+        <!-- Section Footer -->
+        <div class="w-full bg-[#203271] p-[32px] flex flex-wrap">
+            <div class="flex flex-row w-full md:w-1/3 items-start text-white gap-3 pb-5">
+                <svg class="max-w-[48px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                    <g opacity="0.6">
+                    <path d="M31.6667 6.66666H8.33333C6.49238 6.66666 5 8.15904 5 9.99999V33.3333C5 35.1743 6.49238 36.6667 8.33333 36.6667H31.6667C33.5076 36.6667 35 35.1743 35 33.3333V9.99999C35 8.15904 33.5076 6.66666 31.6667 6.66666Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6667 3.33334V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.3333 3.33334V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 16.6667H35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.3333 23.3333H13.35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 23.3333H20.0167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6667 23.3333H26.6833" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.3333 30H13.35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 30H20.0167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6667 30H26.6833" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <div class="flex flex-col gap-2">
+                    <h4 class="font-bold text-[16px]">Online appointment scheduling</h4>
+                    <p class="text-white/60 text-[14px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="w-full xl:w-1/3 lg:w-1/2 px-4">
-            <div class="mb-8 rounded-2xl border border-gray-200 hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-4">
-              <a href="#">
-                <img src="src/img/trending/1-2.jpg" alt="card-nft" class="w-full py-4 px-4 rounded-3xl overflow-hidden">
-              </a>
-              <div class="pt-4 lg:pt-8 px-8">
-                <h3><a href="#" class="font-bold text-xl lg:text-2xl uppercase text-primary">Doge Club</a></h3>
-                <h5 class="text-sm lg:text-base text-primary pt-2 font-semibold">By DOGC</h5>
-                <div class="flex justify-between">
-                  <div class="py-6">
-                    <p class="text-sm lg:text-base font-semibold">Current Bid</p>
-                    <p class="font-bold text-lg lg:text-2xl">665.15 ETH</p>
-                  </div>
-                    <button><a href="#" class="font-semibold bg-blue-600 py-2 px-4 text-white rounded-lg text-sm hover:bg-blue-500 lg:text-base">Place a Bid</a></button>                
+            <div class="flex flex-row w-full md:w-1/3 items-start text-white gap-3 pb-5">
+                <svg class="max-w-[48px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                    <g opacity="0.6">
+                    <path d="M30 13.3333C30 10.6812 28.9464 8.13764 27.0711 6.26228C25.1957 4.38691 22.6522 3.33334 20 3.33334C17.3478 3.33334 14.8043 4.38691 12.9289 6.26228C11.0536 8.13764 10 10.6812 10 13.3333C10 25 5 28.3333 5 28.3333H35C35 28.3333 30 25 30 13.3333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.8833 35C22.5903 35.5051 22.1697 35.9244 21.6637 36.2159C21.1577 36.5073 20.584 36.6608 20 36.6608C19.416 36.6608 18.8423 36.5073 18.3363 36.2159C17.8303 35.9244 17.4097 35.5051 17.1167 35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <div class="flex flex-col gap-2">
+                    <h4 class="font-bold text-[16px]">Medication reminders</h4>
+                    <p class="text-white/60 text-[14px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="w-full xl:w-1/3 lg:w-1/2 px-4 group">
-            <div class="mb-8 rounded-2xl border border-gray-200 hover:shadow-xl transition duration-300 ease-in-out hover:-translate-y-4">
-              <a href="#">
-                <img src="src/img/trending/1-3.jpg" alt="card-nft" class="w-full py-4 px-4 rounded-3xl overflow-hidden">
-              </a>
-              <div class="pt-4 lg:pt-8 px-8">
-                <h3><a href="#" class="font-bold text-xl lg:text-2xl uppercase text-primary">Azuki</a></h3>
-                <h5 class="text-sm lg:text-base text-primary pt-2 font-semibold">By TeamAzuki</h5>
-                <div class="flex justify-between">
-                  <div class="py-6">
-                    <p class="text-sm lg:text-base font-semibold">Current Bid</p>
-                    <p class="font-bold text-lg lg:text-2xl">267.75 ETH</p>
-                  </div>
-                    <button><a href="#" class="font-semibold bg-blue-600 py-2 px-4 text-white rounded-lg text-sm hover:bg-blue-500 lg:text-base">Place a Bid</a></button>                
+            <div class="flex flex-row w-full md:w-1/3 items-start text-white gap-3 pb-5">
+                <svg class="max-w-[48px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                    <g opacity="0.6">
+                    <path d="M20 30C27.3638 30 33.3333 24.0305 33.3333 16.6667C33.3333 9.30288 27.3638 3.33334 20 3.33334C12.6362 3.33334 6.66666 9.30288 6.66666 16.6667C6.66666 24.0305 12.6362 30 20 30Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 21.6667C22.7614 21.6667 25 19.4281 25 16.6667C25 13.9052 22.7614 11.6667 20 11.6667C17.2386 11.6667 15 13.9052 15 16.6667C15 19.4281 17.2386 21.6667 20 21.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.6667 36.6667H28.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 36.6667V30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <div class="flex flex-col gap-2">
+                    <h4 class="font-bold text-[16px]">Virtual consultations</h4>
+                    <p class="text-white/60 text-[14px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
+    </div>
 
-        <!-- Popular Collections -->
-        <div class="w-full px-4 flex justify-between py-20">
-          <h1 class="font-semibold text-primary text-2xl lg:text-4xl">Popular <span class="invisible sm:visible">Collections</span></h1>
-          <a href="#" class="block items-center text-white text-xs lg:text-base font-semibold py-3 px-6 bg-blue-600 hover:bg-blue-500 rounded-lg"><i class='bx bx-rocket text-xs md:text-base'></i><span class="pl-2">Explore</span></a>
-        </div>
-
-        <!-- card -->
-        <div class="flex flex-wrap">
-          <div class="w-full xl:w-1/3 lg:w-1/2 px-4">
-            <div class="mb-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out">
-              <div class="flex flex-wrap px-4 py-4">
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/1.png" alt="azuki-one" class="w-full bg-cover bg-center rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl overflow-hidden transition ease-in-out duration-300">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/2.png" alt="azuki-two" class="w-full bg-cover bg-center rounded-tl-3xl rounded-tr-3xl rounded-br-3xl overflow-hidden">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/3.png" alt="azuki-three" class="w-full bg-cover bg-center rounded-tl-3xl rounded-br-3xl rounded-bl-3xl overflow-hidden">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/4.png" alt="azuki-four" class="w-full bg-cover bg-center rounded-br-3xl rounded-tr-3xl rounded-bl-3xl overflow-hidden">
-                  </a>
-                </div>
-              </div>
-              <div class="px-4">
-                <div class="flex justify-between">
-                  <div class="flex flex-wrap items-center py-6">
-                    <img src="src/img/avatar/5.svg" alt="profile" class="h-14 w-14 rounded-full">
-                    <div class="px-2">
-                      <p class="text-lg font-semibold">Gracia Mae</p>
-                      <p class="text-sm font-light">Created by <a href="https://opensea.io/collection/azuki" class="inline-block text-blue-600">Azuki</a></p>
-                    </div>
-                  </div>
-                  <div class="text-center text-2xl grid pt-6">
-                    <div class="grid-cols-1 text-2xl">
-                      <i class='bx bx-heart'></i>
-                      <p class="font-semiboldrounded-lg text-sm lg:text-base"><span class="font-semibold">472</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full xl:w-1/3 lg:w-1/2 px-4">
-            <div class="mb-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out">
-              <div class="flex flex-wrap px-4 py-4">
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/5.png" alt="card-nft" class="w-full bg-cover bg-center rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl overflow-hidden transition ease-in-out duration-300">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/6.png" alt="card-nft" class="w-full bg-cover bg-center rounded-tl-3xl rounded-tr-3xl rounded-br-3xl overflow-hidden">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/7.png" alt="card-nft" class="w-full bg-cover bg-center rounded-tl-3xl rounded-br-3xl rounded-bl-3xl overflow-hidden">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/8.png" alt="card-nft" class="w-full bg-cover bg-center rounded-br-3xl rounded-tr-3xl rounded-bl-3xl overflow-hidden">
-                  </a>
-                </div>
-              </div>
-              <div class="px-4">
-                <div class="flex justify-between">
-                  <div class="flex flex-wrap items-center py-6">
-                    <img src="src/img/avatar/6.svg" alt="profile" class="h-14 w-14 rounded-full">
-                    <div class="px-2">
-                      <p class="text-lg font-semibold">Laura dean</p>
-                      <p class="text-sm font-light">Created by <a href="#" class="inline-block text-blue-600">Nyolings</a></p>
-                    </div>
-                  </div>
-                  <div class="text-center text-2xl grid pt-6">
-                    <div class="grid-cols-1 text-2xl">
-                      <i class='bx bx-heart'></i>
-                      <p class="font-semiboldrounded-lg text-sm lg:text-base"><span class="font-semibold">312</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full xl:w-1/3 lg:w-1/2 px-4">
-            <div class="mb-8 rounded-2xl border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition duration-300 ease-in-out">
-              <div class="flex flex-wrap px-4 py-4">
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/9.png" alt="card-nft" class="w-full bg-cover bg-center rounded-tl-3xl rounded-tr-3xl rounded-bl-3xl overflow-hidden transition ease-in-out duration-300">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/10.png" alt="card-nft" class="w-full bg-cover bg-center rounded-tl-3xl rounded-tr-3xl rounded-br-3xl overflow-hidden">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/11.png" alt="card-nft" class="w-full bg-cover bg-center rounded-tl-3xl rounded-br-3xl rounded-bl-3xl overflow-hidden">
-                  </a>
-                </div>
-                <div class="w-1/2 py-1 px-1">
-                  <a href="#">
-                    <img src="src/img/collections/12.png" alt="card-nft" class="w-full bg-cover bg-center rounded-br-3xl rounded-tr-3xl rounded-bl-3xl overflow-hidden">
-                  </a>
-                </div>
-              </div>
-              <div class="px-4">
-                <div class="flex justify-between">
-                  <div class="flex flex-wrap items-center py-6">
-                    <img src="src/img/avatar/7.svg" alt="profile" class="h-14 w-14 rounded-full">
-                    <div class="px-2">
-                      <p class="text-lg font-semibold">Olivia Leigh</p>
-                      <p class="text-sm font-light">Created by <a href="#" class="inline-block text-blue-600">Yugalabs</a></p>
-                    </div>
-                  </div>
-                  <div class="text-center text-2xl grid pt-6">
-                    <div class="grid-cols-1 text-2xl">
-                      <i class='bx bx-heart'></i>
-                      <p class="font-semiboldrounded-lg text-sm lg:text-base"><span class="font-semibold">292</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr class="border-t-2 border-gray-300">
-    <!-- Trending Auction end -->
-
-    <!-- Footer start -->
-    <footer id="community" class="pt-20 lg:pt-32 pb-20 px-4">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-1/2 px-4 py-4 lg:w-1/4">
-            <h2 class="font-semibold text-xl  text-primary mb-5">About</h2>
-            <ul>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">About Us</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Blog</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Careers</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Jobs</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">In Press</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Gallery</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-1/2 px-4 py-4 lg:w-1/4">
-            <h2 class="font-semibold text-xl  text-primary mb-5">Support</h2>
-            <ul>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Contact Us</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Online Chat</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Whatsapp</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Telegram</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Ticketing</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Call Center</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-full px-4 py-4 lg:w-1/4 mb-14">
-            <h2 class="font-semibold text-xl  text-primary mb-5">FAQ</h2>
-            <ul>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Account</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Manage Deliveries</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Orders</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Payments</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Returns</a>
-              </li>
-              <li>
-                <a href="#" class="mb-3 inline-block text-base hover:text-blue-600">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
-          <div class="w-full lg:w-1/4">
-            <div class="flex flex-wrap">
-              <div class="lg:w-screen w-full bg-blue-600 rounded-xl text-white py-6 text-center relative">
-                <div class="w-20 h-20 bg-white rounded-full absolute -top-12 left-1/2 -translate-x-1/2 shadow-xl text-blue-600 text-5xl font-bold flex items-center justify-center">
-                  ?
-                </div>
-                <h3 class="text-xl mb-4 mt-6">Help Center</h3>
-                <p class="font-light text-sm mb-2">Having Trouble in?</p>
-                <p class="font-light text-sm mb-2">Please contact us for more</p>
-                <p class="font-light text-sm mb-2">questions</p>
-                <div class="py-6">
-                  <a href="#" class="bg-white text-blue-600 text-sm font-semibold px-6 py-3 rounded-lg hover:bg-gray-100">Go To Help Center</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer end -->
-  </body>
-  <script src="./js/script.js"></script>
+</body>
 </html>
