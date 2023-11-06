@@ -1,0 +1,144 @@
+// Color
+$background-color: #ECF8FF;
+$main-color: #1DA1F2;
+
+// font
+$paragraph-size: 16px;
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('source-sans-pro.regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro';
+}
+
+body {
+    background-color: $background-color;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@function colorBorder($opacity: 0) {
+    @return rgba(29, 161, 242, $opacity);
+}
+
+@function border($opacity: 0.20) {
+    @return 1px solid colorBorder($opacity);
+}
+
+@function boxShadow($opacity: 0.15) {
+    @return 0px 15px 60px 0px colorBorder($opacity);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .box-embed {
+        width: 601px;
+        background-color: #FFF;
+        padding: 35px 31px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: border(0.20);
+        box-shadow: boxShadow(0.15) ;
+
+        .box-profile {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+
+            .box-profile-content {
+                display: flex;
+                align-items: center;
+                gap: 22px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+
+                .box-profile-content-paragraph {
+                    p {
+                        font-size: 18px;
+                        line-height: normal;
+                        font-style: normal;
+                        color: #000;
+                        font-weight: 700;
+                    }
+
+                    span {
+                        color: rgba(0,0,0, 0.60);
+                        font-size: $paragraph-size;
+                        font-weight: 400;
+                        font-style: normal;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .icons {
+                width: 30px;
+                height: 30px;
+                color: $main-color;
+            }
+        }
+
+        .box-content {
+            p {
+                font-size: $paragraph-size;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+
+                span {
+                    color: #1DA1F2;
+                }
+            }
+        }
+
+        .box-complement {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            font-style: normal;
+            font-size: 16px;
+            line-height: 26px;
+            font-weight: 600;
+            color: rgba(0,0,0,0.60);
+            
+            p {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                ion-icon {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+    .icons-mode {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 25px;
+        width: 24px;
+        height: 24px;
+        color: #000;
+    }
+}
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="px-[10vh] pt-[3.5vh]">
+        <span class="bg-hero"></span>
+
+        <!-- Section Navbar -->
+        <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-row justify-start items-center w-[55%]">
+                <a href="#" class="flex gap-2 font-bold text-[18px] leading-normal mr-[48px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                        <path d="M4.8 2.79999C4.80356 2.86282 4.8268 2.92295 4.86641 2.97185C4.90603 3.02075 4.96002 3.05595 5.02075 3.07248C5.08148 3.089 5.14586 3.08601 5.2048 3.06392C5.26373 3.04184 5.31422 3.00178 5.34913 2.94941C5.38404 2.89705 5.4016 2.83503 5.39932 2.77213C5.39704 2.70924 5.37504 2.64866 5.33643 2.59896C5.29782 2.54926 5.24456 2.51296 5.18418 2.4952C5.12381 2.47744 5.05937 2.47911 5 2.49999H4C3.46957 2.49999 2.96086 2.7107 2.58579 3.08578C2.21071 3.46085 2 3.96956 2 4.49999V9.49999C2 11.0913 2.63214 12.6174 3.75736 13.7426C4.88258 14.8678 6.4087 15.5 8 15.5C9.5913 15.5 11.1174 14.8678 12.2426 13.7426C13.3679 12.6174 14 11.0913 14 9.49999V4.49999C14 3.96956 13.7893 3.46085 13.4142 3.08578C13.0391 2.7107 12.5304 2.49999 12 2.49999H11C10.9803 2.51969 10.9647 2.54307 10.954 2.56881C10.9434 2.59455 10.9379 2.62213 10.9379 2.64999C10.9379 2.67785 10.9434 2.70543 10.954 2.73117C10.9647 2.75691 10.9803 2.78029 11 2.79999C11.0197 2.81969 11.0431 2.83531 11.0688 2.84597C11.0946 2.85663 11.1221 2.86212 11.15 2.86212C11.1779 2.86212 11.2054 2.85663 11.2312 2.84597C11.2569 2.83531 11.2803 2.81969 11.3 2.79999" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 15.5V16.5C8 18.0913 8.63214 19.6174 9.75736 20.7426C10.8826 21.8679 12.4087 22.5 14 22.5V22.5C15.5913 22.5 17.1174 21.8679 18.2426 20.7426C19.3679 19.6174 20 18.0913 20 16.5V12.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20 12.5C21.1046 12.5 22 11.6046 22 10.5C22 9.39543 21.1046 8.5 20 8.5C18.8954 8.5 18 9.39543 18 10.5C18 11.6046 18.8954 12.5 20 12.5Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    Holadok
+                </a>
+
+                <ul class="flex flex-row justify-between items-center gap-8 text-[16px] leading-normal">
+                    <li>
+                        <a href="#" class="font-semibold">Home</a>   
+                    </li>
+                    <li>
+                        <a href="#">Features</a>   
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>   
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>   
+                    </li>
+                </ul>
+            </div>
+
+            
+
+            <div class="flex flex-row items-center gap-8">
+                <a href="#" class="font-bold">Login</a>
+                <button class="px-[2.8vh] py-[0.6vh] border border-[#101C45]">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Section Hero -->
+        <div class="flex flex-row justify-between">
+            <!-- Section Hero Quotes -->
+            <div class="mt-[5.8rem] w-[65%]">
+                <h3 class="text-[2.6rem] font-bold">Get the healthcare <br/> you need, when you <br/> need it</h3>
+                <p class="mt-[12px]">Manage all of your healthcare needs in one convenient <br/> place - from booking appoinments to tracking your </p> health history</p>
+            
+                <button class="mt-[32px] py-[15px] px-[35px] bg-[#203271] text-white">Book An Appointment</button>
+            </div>
+
+            <div class="relative">
+                <div class="absolute top-[16%] -left-[40%] bg-white p-[20px] rounded-md w-[20rem] shadow-md">
+                    <div class="flex flex-row justify-between align-items">
+                        <span class="flex flex-row items-center gap-4">
+                            <img src="images/comment-image.svg" alt="">
+                            <p class="text-[14px] font-semibold leading-normal text-[#000]">Jane Doe</p>
+                        </span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 21C6 21 10 20 10 13V5C10 3.75 9.244 2.983 8 3H4C2.75 3 2 3.75 2 4.972V11C2 12.25 2.75 13 4 13C5 13 5 13 5 14V15C5 16 4 17 3 17C2 17 2 17.008 2 18.031V20C2 21 2 21 3 21Z" fill="black" fill-opacity="0.2"/>
+                            <path d="M15 21C18 21 22 20 22 13V5C22 3.75 21.243 2.983 20 3H16C14.75 3 14 3.75 14 4.972V11C14 12.25 14.75 13 16 13H16.75C16.75 15.25 17 17 14 17V20C14 21 14 21 15 21Z" fill="black" fill-opacity="0.2"/>
+                        </svg>
+                    </div>
+                    <div class="text-[12px] mt-[8px]">
+                        <p>“The doctor appointment app has been great for me. Scheduling appointments and getting medication reminders is much easier, and I love the option for virtual consultations. I'd recommend this app to others.”</p>
+                    </div>
+                </div>
+
+                <img class="w-[100%]" src="images/hero-image.png" alt="">
+            </div>
+        </div>
+
+        <!-- Section Footer -->
+        <div class="w-[100%] bg-[#203271] p-[32px] flex gap-8">
+            <div class="flex flex-row items-start text-white gap-3">
+                <svg class="max-w-[48px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                    <g opacity="0.6">
+                    <path d="M31.6667 6.66666H8.33333C6.49238 6.66666 5 8.15904 5 9.99999V33.3333C5 35.1743 6.49238 36.6667 8.33333 36.6667H31.6667C33.5076 36.6667 35 35.1743 35 33.3333V9.99999C35 8.15904 33.5076 6.66666 31.6667 6.66666Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6667 3.33334V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.3333 3.33334V10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 16.6667H35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.3333 23.3333H13.35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 23.3333H20.0167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6667 23.3333H26.6833" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M13.3333 30H13.35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 30H20.0167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.6667 30H26.6833" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <div class="flex flex-col gap-2">
+                    <h4 class="font-bold text-[16px]">Online appointment scheduling</h4>
+                    <p class="text-white/60 text-[14px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </div>
+            <div class="flex flex-row items-start text-white gap-3 ">
+                <svg class="max-w-[48px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                    <g opacity="0.6">
+                    <path d="M30 13.3333C30 10.6812 28.9464 8.13764 27.0711 6.26228C25.1957 4.38691 22.6522 3.33334 20 3.33334C17.3478 3.33334 14.8043 4.38691 12.9289 6.26228C11.0536 8.13764 10 10.6812 10 13.3333C10 25 5 28.3333 5 28.3333H35C35 28.3333 30 25 30 13.3333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.8833 35C22.5903 35.5051 22.1697 35.9244 21.6637 36.2159C21.1577 36.5073 20.584 36.6608 20 36.6608C19.416 36.6608 18.8423 36.5073 18.3363 36.2159C17.8303 35.9244 17.4097 35.5051 17.1167 35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <div class="flex flex-col gap-2">
+                    <h4 class="font-bold text-[16px]">Medication reminders</h4>
+                    <p class="text-white/60 text-[14px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </div>
+            <div class="flex flex-row items-start text-white gap-3 ">
+                <svg class="max-w-[48px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+                    <g opacity="0.6">
+                    <path d="M20 30C27.3638 30 33.3333 24.0305 33.3333 16.6667C33.3333 9.30288 27.3638 3.33334 20 3.33334C12.6362 3.33334 6.66666 9.30288 6.66666 16.6667C6.66666 24.0305 12.6362 30 20 30Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 21.6667C22.7614 21.6667 25 19.4281 25 16.6667C25 13.9052 22.7614 11.6667 20 11.6667C17.2386 11.6667 15 13.9052 15 16.6667C15 19.4281 17.2386 21.6667 20 21.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11.6667 36.6667H28.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M20 36.6667V30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                </svg>
+                <div class="flex flex-col gap-2">
+                    <h4 class="font-bold text-[16px]">Virtual consultations</h4>
+                    <p class="text-white/60 text-[14px]">Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
